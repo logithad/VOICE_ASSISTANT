@@ -1,7 +1,4 @@
-# from dataclasses import replace
-# from re import T
 import pyttsx3
-# import pyaudio
 import speech_recognition as sr
 import wikipedia
 import datetime
@@ -25,14 +22,14 @@ def wishMe():
     if hour>=0 and hour<12:
         speak("Good Morning!")
         
-        speak("I am C Bot and I am your tourist guide")
+        speak("I am C Bot and I am your guide")
     elif hour>12 and hour <=15:
         speak("Good Afternoon!")
-        speak("I am C Bot and I am your tourist guide")
+        speak("I am C Bot and I am your guide")
     else:
         speak("Welcome Back!") 
         
-        speak("I am C Bot and I am your tourist guide")
+        speak("I am C Bot and I am your guide")
     speak("How may I help you")
     
 def takeCommand():
@@ -91,7 +88,7 @@ if __name__ == "__main__":
             
         elif 'go for entertainment' in query:
             webbrowser.open("https:\\www.hotstar.com")
-            
-        elif 'open code' in query:
-            codePath = 'C:\\Users\\Lintheshwar S\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
-            os.startfile(codePath)
+        
+        elif 'see you later' in query:
+            exit()
+	
